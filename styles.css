@@ -67,6 +67,14 @@ form {
   border-radius: 49px;
   width: 532px;
   padding: 13px 64px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.input-wrapper svg {
+  position: absolute;
+  left: 28px;
 }
 
 input {
