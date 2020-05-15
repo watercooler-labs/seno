@@ -1,20 +1,20 @@
+* {
+  box-sizing: border-box;
+}
 @font-face {
   font-family: YoungSerif;
   src: url("/YoungSerif-Regular.otf") format("opentype");
 }
-
 html, body {
   background: #fffdfa;
   margin: 0;
   padding: 0;
   color: #191919;
 }
-
 h1, h2 {
   margin: 0;
   padding: 0;
 }
-
 body {
   min-height: 100vh;
   padding: 0;
@@ -41,78 +41,58 @@ main {
 }
 form {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
 }
-
 .title {
   font-size: 72px;
   font-weight: 700;
-  margin-bottom: 56px;
+  margin-bottom: 30px;
 }
-
 .subtitle {
   font-family: Courier New, monospace;
-  font-size: 35px;
+  font-size: 24px;
   font-weight: 500;
-  line-height: 41px;
+  line-height: 1.4;
   text-align: center;
   color: #191919;
   margin-bottom: 44px;
 }
-
 .input-wrapper {
   border: 5px solid #B1ECDB;
   border-radius: 49px;
   width: 532px;
   padding: 13px 64px;
-  display: flex;
-  align-items: center;
-  position: relative;
 }
-
 .input-wrapper svg {
   position: absolute;
   left: 28px;
 }
-
 input {
   background-color: transparent;
   border: none;
   outline: none;
   width: 100%;
-  margin: 0;
-  color: rgba(0,0,0,.87);
-  word-wrap: break-word;
-  display: flex;
-  flex: 100%;
-  -webkit-tap-highlight-color: transparent;
-  height: 42px;
   font-family: YoungSerif;
   font-weight: 600;
   font-size: 35px;
-  line-height: 42px;
-  padding: 5px 8px 0 16px;
+  padding: 10px 20px;
+  box-sizing: border-box;
 }
 .action {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 .action button {
   background: #B1ECDB;
   border: 1px solid #B1ECDB;
   color: #191919;
   border-radius: 49px;
-  font-size: 25px;
-  font-weight: 600;
-  font-family: YoungSerif;
-  line-height: 30px;
+  font: 600 25px YoungSerif;
   color: #5F6368;
-  padding: 0 16px;
-  height: 67px;
-  width: 275px;
+  width: 90%;
   cursor: pointer;
-  user-select: none;
+  margin: 20px auto;
+  padding: 20px;
+  display: inline-block;
 }
 .lucky {
   min-width: 320px;
@@ -125,15 +105,31 @@ footer {
   display: flex;
   align-items: center;
 }
-
 footer span {
   padding: 24px;
 }
-
 footer a {
   font-family: YoungSerif;
   text-decoration: none;
 }
 a, a:visited {
   color: #191919;
+}
+@media(min-width: 600px) {
+  .title {
+    margin-bottom: 56px;
+  }
+  .subtitle {
+    font-size: 35px;
+    margin-bottom: 60px;
+  }
+  .action {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: 20px auto 0;
+  }
+  .action button {
+    margin: 20px 10px;
+  }
 }
