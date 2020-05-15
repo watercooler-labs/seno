@@ -32,7 +32,7 @@
     const input = document.querySelector('input');
 
     function getPage () {
-      return parseInt(localStorage.get('page') || '2', 10);
+      return parseInt(localStorage.getItem('page') || '2', 10);
     }
 
     function getStart (page) {
