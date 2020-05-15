@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Page2</title>
+  <title>SE-NO</title>
   <style>
     html, body {
       margin: 0;
@@ -59,7 +59,7 @@
 <body>
   <main>
     <div class="content">
-      <h1 class="title">page2</h1>
+      <h1 class="title">SE-NO</h1>
 
       <form>
         <input type="text">
@@ -74,14 +74,18 @@
     const form = document.querySelector('form');
     const input = document.querySelector('input');
 
-    function openPage2 (e) {
+    function getStart (page) {
+      return (page - 1) * 10;
+    }
+
+    function openPageX (e) {
       e.preventDefault();
       const query = input.value.trim();
-      const redirect = `https://www.google.com/search?start=10&q=${query}`;
+      const redirect = `https://www.google.com/search?start=${getStart(2)}&q=${query}`;
       location.href = redirect;
     }
 
-    form.addEventListener('submit', openPage2);
+    form.addEventListener('submit', openPageX);
   </script>
 </body>
 </html>
