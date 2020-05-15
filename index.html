@@ -74,6 +74,10 @@
     const form = document.querySelector('form');
     const input = document.querySelector('input');
 
+    function getPage () {
+      return parseInt(localStorage.get('page') || '2', 10);
+    }
+
     function getStart (page) {
       return (page - 1) * 10;
     }
@@ -81,7 +85,7 @@
     function openPageX (e) {
       e.preventDefault();
       const query = input.value.trim();
-      const redirect = `https://www.google.com/search?start=${getStart(2)}&q=${query}`;
+      const redirect = `https://www.google.com/search?start=${getStart(getPage())}&q=${query}`;
       location.href = redirect;
     }
 
