@@ -17,13 +17,14 @@
         </div>
         <div class="action">
           <button type="submit">Search</button>
+          <button class="lucky" type="submit">I'm Feeling Lucky</button>
         </div>
       </form>
     </div>
   </main>
   <footer>
     <span>
-      Made by <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/emmakathleenmurray/">Emma</a> and the <a target="_blank" rel="noopener noreferrer" href="http://toggl.com/">Watercooler</a>
+      Made by <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/emmakathleenmurray/">Emma</a> and the <a target="_blank" rel="noopener noreferrer" href="https://toggl.com/">Watercooler</a>
     </span>
   </footer>
 
@@ -31,8 +32,16 @@
     const form = document.querySelector('form');
     const input = document.querySelector('input');
 
-    function getPage () {
-      return parseInt(localStorage.getItem('page') || '2', 10);
+    function randomInRange(min, max) {
+      return min + Math.floor(Math.random() * Math.floor(max));
+    }
+
+    function luckyPage () {
+      return randomInRange(1, 20);
+    }
+
+    function getPage (e) {
+      return e.submitter.matches('.lucky') ? luckyPage() : 2
     }
 
     function getStart (page) {
@@ -42,7 +51,7 @@
     function openPageX (e) {
       e.preventDefault();
       const query = input.value.trim();
-      const redirect = `https://www.google.com/search?start=${getStart(getPage())}&q=${query}`;
+      const redirect = `https://www.google.com/search?start=${getStart(getPage(e))}&q=${query}`;
       location.href = redirect;
     }
 

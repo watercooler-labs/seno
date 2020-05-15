@@ -102,9 +102,13 @@ input {
   color: #5F6368;
   padding: 0 16px;
   height: 67px;
-  min-width: 275px;
+  width: 275px;
   cursor: pointer;
   user-select: none;
+}
+.lucky {
+  min-width: 320px;
+  margin-left: 16px;
 }
 footer {
   width: 100%;
