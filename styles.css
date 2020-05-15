@@ -1,0 +1,123 @@
+@font-face {
+  font-family: YoungSerif;
+  src: url("/YoungSerif-Regular.otf") format("opentype");
+}
+
+html, body {
+  background: #fffdfa;
+  margin: 0;
+  padding: 0;
+  color: #191919;
+}
+
+h1, h2 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main {
+  flex: 1 1;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: YoungSerif;
+  width: 100%;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 72px;
+  font-weight: 700;
+  margin-bottom: 56px;
+}
+
+.subtitle {
+  font-family: Courier New, monospace;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 41px;
+  text-align: center;
+  color: #191919;
+  margin-bottom: 44px;
+}
+
+.input-wrapper {
+  border: 5px solid #B1ECDB;
+  border-radius: 49px;
+  width: 532px;
+  padding: 13px 64px;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  margin: 0;
+  color: rgba(0,0,0,.87);
+  word-wrap: break-word;
+  display: flex;
+  flex: 100%;
+  -webkit-tap-highlight-color: transparent;
+  height: 42px;
+  font-family: YoungSerif;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 42px;
+  padding: 5px 8px 0 16px;
+}
+.action {
+  margin-top: 50px;
+}
+.action button {
+  background: #B1ECDB;
+  border: 1px solid #B1ECDB;
+  color: #191919;
+  border-radius: 49px;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: YoungSerif;
+  line-height: 30px;
+  color: #5F6368;
+  padding: 0 16px;
+  height: 67px;
+  min-width: 275px;
+  cursor: pointer;
+  user-select: none;
+}
+footer {
+  width: 100%;
+  height: 100px;
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  align-items: center;
+}
+footer a {
+  font-family: YoungSerif;
+  text-decoration: none;
+  padding: 24px;
+}
+a:visited {
+  color: #191919;
+}
