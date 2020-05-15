@@ -57,6 +57,9 @@ form {
   color: #191919;
   margin-bottom: 44px;
 }
+.subtitle.header {
+  margin-bottom: 40px;
+}
 .input-wrapper {
   border: 5px solid #B1ECDB;
   border-radius: 49px;
