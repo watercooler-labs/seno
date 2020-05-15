@@ -24,7 +24,7 @@ body {
 }
 main {
   flex: 1 1;
-  padding: 5rem 0;
+  padding: 5rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,7 +50,7 @@ form {
 }
 .subtitle {
   font-family: Courier New, monospace;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 500;
   line-height: 1.4;
   text-align: center;
@@ -65,7 +65,10 @@ form {
 }
 .input-wrapper svg {
   position: absolute;
-  left: 28px;
+  width: 30px;
+  height: 30px;
+  top: 30%;
+  left: 20px;
 }
 input {
   background-color: transparent;
