@@ -9,7 +9,7 @@ html, body {
   background: #fffdfa;
   margin: 0;
   padding: 0;
-  color: #191919;
+  color: #0d0d0d;
 }
 h1, h2 {
   margin: 0;
@@ -54,7 +54,7 @@ form {
   font-weight: 500;
   line-height: 1.4;
   text-align: center;
-  color: #191919;
+  color: #0d0d0d;
   margin-bottom: 44px;
 }
 .subtitle.header {
@@ -118,7 +118,7 @@ footer a {
   text-decoration: none;
 }
 a, a:visited {
-  color: #191919;
+  color: #0d0d0d;
 }
 @media(min-width: 600px) {
   .title {
