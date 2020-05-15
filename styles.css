@@ -81,7 +81,7 @@ input {
   width: 100%;
   font-family: YoungSerif;
   font-weight: 600;
-  font-size: 35px;
+  font-size: 25px;
   padding: 10px 20px;
   box-sizing: border-box;
 }
@@ -136,5 +136,8 @@ a, a:visited {
   }
   .lucky {
     min-width: 320px;
+  }
+  input {
+    font-size: 35px; 
   }
 }
