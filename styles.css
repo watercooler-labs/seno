@@ -91,11 +91,10 @@ input {
 .action button {
   background: #B1ECDB;
   border: 1px solid #B1ECDB;
-  color: #191919;
   border-radius: 49px;
   font: 600 25px YoungSerif;
   color: #5F6368;
-  width: 90%;
+  width: 99%;
   cursor: pointer;
   margin: 20px auto;
   padding: 20px;
