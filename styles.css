@@ -113,11 +113,15 @@ footer {
   display: flex;
   align-items: center;
 }
+
+footer span {
+  padding: 24px;
+}
+
 footer a {
   font-family: YoungSerif;
   text-decoration: none;
-  padding: 24px;
 }
-a:visited {
+a, a:visited {
   color: #191919;
 }
