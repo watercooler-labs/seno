@@ -60,15 +60,19 @@ form {
 .input-wrapper {
   border: 5px solid #B1ECDB;
   border-radius: 49px;
-  width: 532px;
-  padding: 13px 64px;
+  width: 100%;
+  padding: 10px 10px 10px 45px;
+  position: relative;
+  margin: auto;
+  max-width: 550px;
 }
 .input-wrapper svg {
   position: absolute;
   width: 30px;
   height: 30px;
-  top: 30%;
+  top: 50%;
   left: 20px;
+  transform: translateY(-50%);
 }
 input {
   background-color: transparent;
