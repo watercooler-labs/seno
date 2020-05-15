@@ -68,9 +68,14 @@
       return (page - 1) * 10;
     }
 
+    function pastaTime () {
+      location.href = 'https://www.google.com/search?&q=pasta+cats';
+    }
+
     function openPageX (e) {
       e.preventDefault();
       const query = input.value.trim();
+      if (!query) return pastaTime();
       const redirect = `https://www.google.com/search?start=${getStart(getPage(e))}&q=${query}`;
       location.href = redirect;
     }
