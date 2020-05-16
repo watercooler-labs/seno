@@ -51,6 +51,7 @@
   <script>
     const form = document.querySelector('form');
     const input = document.querySelector('input');
+    const lucky = document.querySelector('button.lucky');
 
     function randomInRange(min, max) {
       return min + Math.floor(Math.random() * Math.floor(max));
@@ -61,7 +62,10 @@
     }
 
     function getPage (e) {
-      return e.submitter.matches('.lucky') ? luckyPage() : 2
+      if (e.target.matches('.lucky')) {
+        return luckyPage();
+      }
+      return (e.submitter && e.submitter.matches('.lucky')) ? luckyPage() : 2
     }
 
     function getStart (page) {
@@ -81,6 +85,7 @@
     }
 
     form.addEventListener('submit', openPageX);
+    lucky.addEventListener('click', openPageX);
   </script>
 </body>
 </html>
