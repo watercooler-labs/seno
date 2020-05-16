@@ -62,10 +62,7 @@
     }
 
     function getPage (e) {
-      if (e.target.matches('.lucky')) {
-        return luckyPage();
-      }
-      return (e.submitter && e.submitter.matches('.lucky')) ? luckyPage() : 2
+      return e.target.matches('.lucky') ? luckyPage() : 2;
     }
 
     function getStart (page) {
